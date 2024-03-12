@@ -6,6 +6,24 @@
     <title>Exercício</title>
 </head>
 <body>
-    
+    <script>
+        class Celular{
+            marca;
+            modelo;
+            armazenamento;
+            constructor(marca,modelo,armazenamento){
+                this.marca = marca;
+                this.modelo = modelo;
+                this.armazenamento = armazenamento;
+            }
+            informacoesCelular(){
+                return("Marca: " + this.marca + ". Modelo: " + this.modelo + ". Armazenamento: " + this.armazenamento + ".");
+            }
+        }
+
+        let Celular1 = new Celular("Apple","IPhone 11","560gb")
+        console.log(Celular1);
+        console.log(Celular1.informacoesCelular());
+    </script>
 </body>
 </html>
