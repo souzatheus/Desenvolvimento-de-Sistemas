@@ -6,6 +6,24 @@
     <title>Exercício</title>
 </head>
 <body>
-    
+    <script>
+        class Filme{
+            titulo;
+            genero;
+            duracao;
+            constructor(titulo,genero,duracao){
+                this.titulo = titulo;
+                this.genero = genero;
+                this.duracao = duracao;
+            }
+            informacoesFilmes(){
+                return("Titulo: " + this.titulo + ". Genero: " + this.genero + ". Duracao: " + this.duracao + ".")
+            }
+        }
+
+        let Filme1 = new Filme("A Freira 2","Terror","1h 50m")
+        console.log(Filme1);
+        console.log(Filme1.informacoesFilmes());
+    </script>
 </body>
 </html>

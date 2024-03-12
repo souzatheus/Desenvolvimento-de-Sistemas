@@ -6,6 +6,24 @@
     <title>Exercício</title>
 </head>
 <body>
-    
+    <script>
+        class Empresa{
+            nome;
+            receitaAnual;
+            despesaAnual;
+            constructor(nome,receitaAnual,despesaAnual){
+                this.nome = nome;
+                this.receitaAnual = receitaAnual;
+                this.despesaAnual = despesaAnual;
+            }
+            calcularLucroAnual(){
+                return(this.receitaAnual - this.despesaAnual)
+            }
+        }
+
+        let Empresa1 = new Empresa("Coca Cola","10000000000","1000000000");
+        console.log(Empresa1);
+        console.log(`O Lucro Anual da Empresa foi de: ${Empresa1.calcularLucroAnual()}R$`)
+    </script>
 </body>
 </html>
